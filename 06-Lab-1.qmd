@@ -17,6 +17,12 @@ Enter your answers below each question. Submit your answers through Canvas
 
 Write code to get the tornado data (from file `Tornadoes.csv` in the directory `data`) into your R environment as a data frame called `Torn.df` (4)
 
+```{r}
+#| echo: true
+L <- "D:\Documents\CCS-2023\data\Tornadoes.csv"
+Torn.df <- readr::read_table(file = L)
+```
+
 ## 2
 
 Write code to get the average tornado path length. The path length variable is `len` in `Torn.df` from question 1 (4)
@@ -32,3 +38,5 @@ Write code to make the functions from the {ggplot2} package available to your cu
 ## 5
 
 Type your answer below to the following question: According to the PBS video entitled "What is the riskiest region in the US as the climate changes?" (linked in the file `05-working-with-data.qmd`), what county is most risky? (2)
+
+Phoenix, AZ
