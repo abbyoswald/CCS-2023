@@ -27,13 +27,24 @@ Torn.df <- readr::read_table(file = L)
 
 Write code to get the average tornado path length. The path length variable is `len` in `Torn.df` from question 1 (4)
 
+Torn.df$len |>
+  mean()
+
+
 ## 3
 
 Write code to create a new data frame containing only tornadoes with damage rating (`mag`) greater or equal to 4 (4)
 
+#| echo: true
+Mag_Torn.df <- Torn.df |>
+  dplyr::filter(mag >= "4")
+
 ## 4
 
 Write code to make the functions from the {ggplot2} package available to your current R session (4)
+
+{r}
+library(ggplot2)
 
 ## 5
 
